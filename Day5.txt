@@ -1,0 +1,44 @@
+====>>    Day-5 Advance  Linux course
+=======================================================
+--> to change the owner of file you can use chown command 
+e.g sudo chown root day5.md
+--> To 2 kinds of ownership
+            --  owner  and
+             --  permission
+--> types of permission
+        read(r) 
+       write(w) edit
+        excute(x) run 
+e.g drwxr-xr-x  1st for user 2nd group and 3rd for other
+-- in one file there are 9 permission.
+user=   u       power of users
+group= g       power of gruops
+other = o       power of others
+All =     a        power of all 
+e.g  chmod +x day5.txt
+       chmod +r day5.txt
+       chmod +w day5.txt
+=>Chmod command
+       read(r) =4-value
+       write(w) edit =2-value
+        excute(x) run=1-value
+     chmod a+x
+ ==> change uid command
+     e.g sudo usermod -u 1923 andu
+==>delete user
+e.g sudo userdel -r andu
+
+Special File Permissions
+=====================================
+SUID bits(s) -- set user ID bit -- add 4 numeric value -->400
+SGID bitd(s) ---      group bit  -- add 2 numeric value -->2777
+Sticky bit(t)  ---  set other ID bit  -- add 1 numeric value -->1602
+
+APT
+======
+online install using apt command
+offline install using dpkg command
+sudo apt update
+sudo apt remove <>
+sudo apt upgrade <>
+
